@@ -1,0 +1,49 @@
+{
+  "model_name": "CatBoost Recommendation Classifier",
+  "accuracy": 0.8625,
+  "precision": 0.8243,
+  "recall": 0.7531,
+  "f1_score": 0.7871,
+  "roc_auc": 0.9441,
+  "baseline_accuracy": 0.6625,
+  "baseline_f1": 0.0,
+  "confusion_matrix": [
+    [
+      146,
+      13
+    ],
+    [
+      20,
+      61
+    ]
+  ],
+  "dataset_rows": 1200,
+  "train_rows": 960,
+  "test_rows": 240,
+  "features": [
+    "life_stage",
+    "goal_category",
+    "topic_category",
+    "task_urgency",
+    "difficulty_level",
+    "resource_type",
+    "days_until_deadline",
+    "progress_ratio",
+    "user_feedback_signal",
+    "interaction_count"
+  ],
+  "target": "relevance_label",
+  "feature_importances": {
+    "life_stage": 16.165408031108463,
+    "goal_category": 5.030011282268147,
+    "topic_category": 18.808327976882307,
+    "task_urgency": 10.63249336079759,
+    "difficulty_level": 4.372714404619918,
+    "resource_type": 3.18738200517,
+    "days_until_deadline": 19.098972193743034,
+    "progress_ratio": 11.816756935286255,
+    "user_feedback_signal": 8.534023103977647,
+    "interaction_count": 2.3539107061466935
+  },
+  "status": "trained_and_verified"
+}
